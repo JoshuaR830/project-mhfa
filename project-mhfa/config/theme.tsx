@@ -14,6 +14,12 @@ const theme = createTheme({
         error: {
             main: red.A400
         }
+    },
+    typography: {
+        h1: {
+            fontSize: 36,
+            fontWeight: 400
+        }
     }
 });
 
