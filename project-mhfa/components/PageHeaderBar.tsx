@@ -16,13 +16,13 @@ const PageHeaderBar = () => {
                     <HomeIcon/>
                     <Typography variant="h6" noWrap component="a" href="/">UNiDAYS Mental Health Hub</Typography>
                     {/* Do something different on mobile */}
-                    <Box sx={{ flexGrow: 1, display: {xxs: 'none', md: 'flex'} }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }}>
                         {pages.map((page) => (
                             <Button variant='contained' color='secondary' key={page} onClick={doThing}>
                                 {page}
                             </Button>))
                         }
-                        </Box>
+                    </Box>
                 </Toolbar>
             </Container>
         </AppBar>
