@@ -3,7 +3,7 @@ import ContactInfoCard from '../components/ContactInfoCard';
 import Layout from '../components/Layout';
 import { Box, Typography, Container } from '@mui/material';
 
-const YourMhfas:NextPage = () => {
+const YourMhfas: NextPage = () => {
     return (
         <Layout>
             <Box>
