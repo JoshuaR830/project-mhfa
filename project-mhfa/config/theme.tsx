@@ -1,6 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 import { common, cyan, green, red, grey } from '@mui/material/colors';
-import { getRSCModuleType } from 'next/dist/build/analysis/get-page-static-info';
 
 const theme = createTheme({
     palette: {
