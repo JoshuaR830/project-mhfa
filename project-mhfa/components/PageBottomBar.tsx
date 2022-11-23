@@ -6,7 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import React from 'react';
 import { useRouter } from "next/router";
 
-var pages = [{ href: '/home', icon: <HomeIcon />, label: 'Home' }, { href: '/your-mhfas', icon: <PeopleIcon />, label: 'MHFAs' }, { href: '/resources', icon: <ArticleIcon />, label: 'Resources' }]
+var pages = [{ href: '/', icon: <HomeIcon />, label: 'Home' }, { href: '/your-mhfas', icon: <PeopleIcon />, label: 'MHFAs' }, { href: '/resources', icon: <ArticleIcon />, label: 'Resources' }]
 
 const PageBottomBar = () => {
     const router = useRouter();
