@@ -1,0 +1,46 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A bucket to hold the resources for the Mental Health First Aider website
+
+Resources:
+  MentalHealthFirstAiderBucket:
+    Type: AWS::S3::Bucket
+    Properties: 
+      AccessControl: PublicRead
+      BucketName: mhfa.joshuarichardson.dev
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods:
+            - GET
+            AllowedOrigins:
+            - '*'
+            AllowedHeaders:
+              - '*'
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        RoutingRules:
+          - RoutingRuleCondition:
+              HttpErrorCodeReturnedEquals: '404'
+            RedirectRule:
+              HostName: 'mhfa.joshuarichardson.dev'
+              ReplaceKeyPrefixWith: '#!/'
+          - RoutingRuleCondition:
+              HttpErrorCodeReturnedEquals: '403'
+            RedirectRule:
+              HostName: 'mhfa.joshuarichardson.dev'
+              ReplaceKeyPrefixWith: '#!/'
+      Tags:
+        - Key: project
+          Value: mhfa
+
+  MentalHealthFirstAiderBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: mhfa.joshuarichardson.dev
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Action:
+              - s3:GetObject
+            Effect: Allow
+            Principal: '*'
+            Resource: arn:aws:s3:::mhfa.joshuarichardson.dev/*
