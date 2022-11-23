@@ -2,7 +2,7 @@ import { Button, Box, Card, CardMedia, Typography, CardContent, CardActions, Ava
 
 const ContactInfoCard = (prop: {imageSrc: string, name: string, role: string, office: string}) => {
     return (
-        <Card sx={{ maxWidth: 345, m:2 }}>
+        <Card sx={{ maxWidth: 344, m:2, borderRadius: '0 16px 16px 16px' }}>
             <CardMedia component="img" height="194" image={prop.imageSrc} alt="practice image"></CardMedia>
 
             <CardContent>

@@ -1,0 +1,6 @@
+[
+    { "name": "Gareth Davies", "role": "Head of IT & Security", "imageSrc": "https://s3.eu-west-2.amazonaws.com/mhfa.joshuarichardson.dev/resources/images/bluebells.jpg", "office": "Nottingham" },
+    { "name": "Ryan Jardine", "role": "Strategic Account Manager", "imageSrc": "/static/images/bluebells.jpg", "office": "London" },
+    { "name": "Tom Sterrett", "role": "Partner Product Manager", "imageSrc": "/static/images/bluebells.jpg", "office": "Nottingham" },
+    { "name": "Kate Wareham", "role": "Partner Development Director", "imageSrc": "/static/images/bluebells.jpg", "office": "Sydney" }
+]
