@@ -1,12 +1,12 @@
-import { BottomNavigation, BottomNavigationAction, Paper, Box, Drawer, IconButton, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import Link from "next/link";
+import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material';
+import Link from 'next/link';
 import PeopleIcon from '@mui/icons-material/People';
 import ArticleIcon from '@mui/icons-material/Article';
 import HomeIcon from '@mui/icons-material/Home';
 import React from 'react';
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
-var pages = [{ href: '/', icon: <HomeIcon />, label: 'Home' }, { href: '/your-mhfas', icon: <PeopleIcon />, label: 'MHFAs' }, { href: '/resources', icon: <ArticleIcon />, label: 'Resources' }]
+const pages = [{ href: '/', icon: <HomeIcon />, label: 'Home' }, { href: '/your-mhfas', icon: <PeopleIcon />, label: 'MHFAs' }, { href: '/resources', icon: <ArticleIcon />, label: 'Resources' }];
 
 const PageBottomBar = () => {
     const router = useRouter();
@@ -19,7 +19,7 @@ const PageBottomBar = () => {
                     showLabels
                     value={value}
                     onChange={(event, newValue) => {
-                        console.log(newValue)
+                        console.log(newValue);
                         setValue(newValue);
                     }}
                     sx={{ '& .MuiButtonBase-root':{ color: 'grey.500'}, '& .MuiButtonBase-root.Mui-selected': {color: 'grey.800'}, '& .MuiButtonBase-root.Mui-selected > .MuiSvgIcon-root': { width: 50, borderRadius: 3, backgroundColor: 'primary.100' } }}
@@ -29,6 +29,6 @@ const PageBottomBar = () => {
             </Box>
         </>
     );
-}
+};
 
 export default PageBottomBar;

@@ -1,5 +1,6 @@
-import PageHeaderBar from "./PageHeaderBar";
-import PageBottomBar from "./PageBottomBar";
+import React from 'react';
+import PageHeaderBar from './PageHeaderBar';
+import PageBottomBar from './PageBottomBar';
 import { Box } from '@mui/material';
 
 const Layout = (props: { children: JSX.Element }) => {
@@ -11,7 +12,7 @@ const Layout = (props: { children: JSX.Element }) => {
             </Box>
             <PageBottomBar></PageBottomBar>
         </Box>
-    )
-}
+    );
+};
 
 export default Layout;

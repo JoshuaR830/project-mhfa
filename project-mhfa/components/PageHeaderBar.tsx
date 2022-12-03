@@ -1,9 +1,10 @@
-import { Container, AppBar, Toolbar, Typography, Menu, MenuItem, Button, Box } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home"
-import Link from "next/link";
-import { useRouter } from "next/router";
+import React from 'react';
+import { Container, AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-const pages = [{name: 'Home', link: '/'}, {name: 'MHFAs', link: '/your-mhfas'}, {name: 'Resources', link: '/resources'}]
+const pages = [{name: 'Home', link: '/'}, {name: 'MHFAs', link: '/your-mhfas'}, {name: 'Resources', link: '/resources'}];
 
 
 const PageHeaderBar = () => {
@@ -25,7 +26,7 @@ const PageHeaderBar = () => {
                 </Toolbar>
             </Container>
         </AppBar>
-    )
-}
+    );
+};
 
 export default PageHeaderBar;

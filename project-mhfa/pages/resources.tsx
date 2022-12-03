@@ -14,7 +14,7 @@ const Resources: NextPage = () => {
                 <ResourceLink href='https://www.papyrus-uk.org/papyrus-hopelineuk/' linkTitle='Hopeline UK' linkDescription='A safe space to talk through struggles that may impact your own safety or the safety of others' imageSrc='https://www.papyrus-uk.org/wp-content/uploads/2018/07/logo.png'></ResourceLink>
             </Box>
         </Layout>
-    )
-}
+    );
+};
 
 export default Resources;

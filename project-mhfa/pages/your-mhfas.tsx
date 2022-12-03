@@ -1,4 +1,5 @@
-import { NextPage } from 'next'
+import React from 'react';
+import { NextPage } from 'next';
 import ContactInfoCard from '../components/ContactInfoCard';
 import Layout from '../components/Layout';
 import { Box, Typography, Container } from '@mui/material';
@@ -13,13 +14,13 @@ const YourMhfas: NextPage = () => {
 
         fetch('https://s3.eu-west-2.amazonaws.com/mhfa.joshuarichardson.dev/resources/data/people.json')
             .then((res) => {
-                console.log(res)
+                console.log(res);
                 res.json().then((data) => {
-                setMhfaData(data);
-                setLoading(false);
-            })})
+                    setMhfaData(data);
+                    setLoading(false);
+                });})
             .catch(error => console.log(error));
-    }, [])
+    }, []);
 
     return (
         <Layout>
@@ -29,14 +30,14 @@ const YourMhfas: NextPage = () => {
                 {isLoading?
                     <Box>Loading...</Box>:
                     mhfaData.length == 0 ?
-                    <Box>No MHFAs available</Box> :
-                    <Container sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
-                        {mhfaData.map(x => <ContactInfoCard key={x.name} imageSrc={x.imageSrc} name={x.name} role={x.role} office={x.office} />)}
-                    </Container>
+                        <Box>No MHFAs available</Box> :
+                        <Container sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+                            {mhfaData.map(x => <ContactInfoCard key={x.name} imageSrc={x.imageSrc} name={x.name} role={x.role} office={x.office} />)}
+                        </Container>
                 }
             </Box>
         </Layout>
-    )
-}
+    );
+};
 
 export default YourMhfas;

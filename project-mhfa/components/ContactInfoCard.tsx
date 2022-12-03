@@ -1,4 +1,5 @@
-import { Button, Box, Card, CardMedia, Typography, CardContent, CardActions, Avatar, CardHeader } from '@mui/material';
+import React from 'react';
+import { Button, Box, Card, CardMedia, Typography, CardContent, CardActions, Avatar } from '@mui/material';
 
 const ContactInfoCard = (prop: {imageSrc: string, name: string, role: string, office: string}) => {
     return (
@@ -21,7 +22,7 @@ const ContactInfoCard = (prop: {imageSrc: string, name: string, role: string, of
                 <Button size="small">Contact</Button>
             </CardActions>
         </Card>
-    )
-}
+    );
+};
 
 export default ContactInfoCard;

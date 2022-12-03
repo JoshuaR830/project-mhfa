@@ -1,8 +1,6 @@
-import React from "react";
-import { Box, Avatar, Typography, Paper } from "@mui/material";
-import Link from "next/link";
+import React from 'react';
+import { Box, Avatar, Typography, Paper } from '@mui/material';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
-import { red } from "@mui/material/colors";
 
 const ResourceLink = (prop: {imageSrc: string, linkTitle: string, linkDescription: string, href: string}) => {
     return (
@@ -22,7 +20,7 @@ const ResourceLink = (prop: {imageSrc: string, linkTitle: string, linkDescriptio
                 </Box>
             </a>
         </Paper>
-    )
-}
+    );
+};
 
 export default ResourceLink;

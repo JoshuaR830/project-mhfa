@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Card, CardMedia, Typography, CardContent, CardActions } from '@mui/material';
 
 const ContentCard = (prop: {imageSrc: string, title: string, text: string}) => {
@@ -12,7 +13,7 @@ const ContentCard = (prop: {imageSrc: string, title: string, text: string}) => {
                 <Button size="small">Do something</Button>
             </CardActions>
         </Card>
-    )
-}
+    );
+};
 
 export default ContentCard;
