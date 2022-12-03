@@ -1,6 +1,17 @@
+
+
 [
-    { "name": "Gareth Davies", "role": "Head of IT & Security", "imageSrc": "https://s3.eu-west-2.amazonaws.com/mhfa.joshuarichardson.dev/resources/images/bluebells.jpg", "office": "Nottingham" },
-    { "name": "Ryan Jardine", "role": "Strategic Account Manager", "imageSrc": "/static/images/bluebells.jpg", "office": "London" },
-    { "name": "Tom Sterrett", "role": "Partner Product Manager", "imageSrc": "/static/images/bluebells.jpg", "office": "Nottingham" },
-    { "name": "Kate Wareham", "role": "Partner Development Director", "imageSrc": "/static/images/bluebells.jpg", "office": "Sydney" }
+    { "firstName": "Andrew", "surname": "Rigley", "description": "Software Engineer", "iconSrc": "Andrew.jfif", "office": "Nottingham" },
+    { "firstName": "Arie", "surname": "David", "description": "CRM Coordinator", "iconSrc": "Arie.jfif", "office": "London" },
+    { "firstName": "Beth", "surname": "Cope", "description": "Fraud Specialist", "iconSrc": "Beth.jfif", "office": "Nottingham" },
+    { "firstName": "Danny", "surname": "Parker", "description": "Software Engineer", "iconSrc": "Danny.jfif", "office": "Nottingham" },
+    { "firstName": "Gareth", "surname": "Davies", "description": "Head of IT and Infrastructure", "iconSrc": "Gareth.jfif", "office": "Nottingham" },
+    { "firstName": "John", "surname": "Bassil", "description": "VP, Engineering", "iconSrc": "John.png", "office": "London" },
+    { "firstName": "Kate", "surname": "Wareham", "description": "Partner Development Director", "iconSrc": "Kate.jfif", "office": "Sydney" },
+    { "firstName": "Katy", "surname": "Richardson", "description": "Creative Services & Marketing Director", "iconSrc": "Katy.png", "office": "Sydney" },
+    { "firstName": "Kieshia", "surname": "Riviere", "description": "Strategy Delivery Director", "iconSrc": "Kieshia.png", "office": "London" },
+    { "firstName": "Matt", "surname": "Large", "description": "Director of Data", "iconSrc": "Matt.jfif", "office": "London" },
+    { "firstName": "Ryan", "surname": "Jardine", "description": "Strategic Account Manager", "iconSrc": "Ryan.jfif", "office": "London" },
+    { "firstName": "Steph", "surname": "Rostron", "description": "Senior Engineering Manager", "iconSrc": "Steph.jfif", "office": "Nottingham" },
+    { "firstName": "Tom", "surname": "Sterrett", "description": "Product Manager", "iconSrc": "Tom.jfif", "office": "Nottingham" }
 ]

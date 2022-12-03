@@ -22,7 +22,7 @@ const PageBottomBar = () => {
                         console.log(newValue);
                         setValue(newValue);
                     }}
-                    sx={{ '& .MuiButtonBase-root':{ color: 'grey.500'}, '& .MuiButtonBase-root.Mui-selected': {color: 'grey.800'}, '& .MuiButtonBase-root.Mui-selected > .MuiSvgIcon-root': { width: 50, borderRadius: 3, backgroundColor: 'primary.100' } }}
+                    sx={{ '& .MuiButtonBase-root':{ color: 'grey.500'}, '& .MuiButtonBase-root.Mui-selected': { color: 'grey.800' }, '& .MuiButtonBase-root.Mui-selected > .MuiSvgIcon-root': { width: 50, borderRadius: 3, backgroundColor: 'primary.100' } }}
                 >
                     { pages.map(x => <BottomNavigationAction key={x.href} component={Link} href={x.href} label={x.label} icon={x.icon} />) }
                 </BottomNavigation>

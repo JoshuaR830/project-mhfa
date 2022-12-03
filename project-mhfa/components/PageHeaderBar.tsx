@@ -16,6 +16,7 @@ const PageHeaderBar = () => {
                     <HomeIcon/>
                     <Typography variant="h6" noWrap component="a" href="/">UNiDAYS Mental Health Hub</Typography>
                     {/* Do something different on mobile */}
+                    {/* I want a chip container that will filter the other boxes in here */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'end'} }}>
                         {pages.map((page) => (
                             <Button sx={{ml: 2}} variant='contained' color={(page.link != router.pathname ? 'secondary' : 'primary')} component={Link} key={page.name} href={page.link}>

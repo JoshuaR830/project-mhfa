@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Card, CardMedia, Typography, CardContent, CardActions } from '@mui/material';
 
-const ContentCard = (prop: {imageSrc: string, title: string, text: string}) => {
+const ContentCard = (prop: {imageSrc: string, title: string, text: string}): JSX.Element => {
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardMedia component="img" height="194" image={prop.imageSrc} alt="practice image"></CardMedia>
