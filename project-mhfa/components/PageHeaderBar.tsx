@@ -10,7 +10,7 @@ const pages = [{name: 'Home', link: '/'}, {name: 'MHFAs', link: '/your-mhfas'}, 
 const PageHeaderBar = () => {
     const router = useRouter();
     return (
-        <AppBar>
+        <AppBar position='fixed' sx={{zIndex: (theme) => theme.zIndex.drawer + 1}}>
             <Container>
                 <Toolbar>
                     <HomeIcon/>

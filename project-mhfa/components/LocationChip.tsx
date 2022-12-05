@@ -10,7 +10,7 @@ interface OfficeInterface {
 export default function LocationChip(prop: {office: string, selectedOffice: string, callback:OfficeInterface}): JSX.Element {
     return (
         <Chip
-            sx={{ width:'140px', m:2, '&.MuiChip-outlined':{ borderColor: getColor(prop.office) }, '&.MuiChip-filled':{ backgroundColor: getColor(prop.office) } }}
+            sx={{ flex: '1 1 0px', maxWidth: '140px', m:2, '&.MuiChip-outlined':{ borderColor: getColor(prop.office) }, '&.MuiChip-filled':{ backgroundColor: getColor(prop.office) } }}
             label={prop.office} variant={prop.selectedOffice == prop.office ? 'filled' : 'outlined'}
             onClick={() => prop.callback(prop.office)} />
     );
